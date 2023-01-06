@@ -1,18 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shibayama Distribuidora de Água</title>
     <link rel="shortcut icon" href="imagens/icon.ico" type="image/x-icon">
- <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/mediaqueries.css">
+    <title>Shibayama Distribuidora de Água</title>
+
 </head>
 <body>
     <header>
         <picture>
-            <source media="(max-width: 130px)" srcset="imagens/icon.png">
-            <img src="imagens/icon.png">
+            <source srcset="./assets/imagens/icon.png" media="(min-width: 900px)">
+            <img src="./assets/imagens/logo-shibayama.png" alt="Logo Shibayama Tamanho Padrão">
+
         </picture>
         <nav>
             <a href="#inicio">Início</a>
@@ -23,25 +26,27 @@
         </nav>
     </header>
     <main>
+
         <div class="container">
-            <div id="coluna1">
+            <div id="coluna-texto">
                 <h1>Distribuidora de Água Shibayama</h1>
                 <h2>Há mais de 10 anos entregando saúde de forma rápida e segura</h2>
-                <button class="botao1"><a href="https://wa.me/554197308606">Peça Agora</a></button>
+                <button class="botaoPecaAgora"><a href="https://wa.me/554197308606">Peça Agora</a></button>
             </div>
-            <div id="coluna2"><picture>
+            <div id="coluna-imagem"><picture>
                 <source media="(max-width: 670px)" srcset="imagens/shibayama-marcas.png">
-                <img src="imagens/shibayama-marcas.png" alt="Marcas">
+                <img src="./assets/imagens/shibayama-marcas.png" alt="Marcas">
             </picture>
             </div>
         </div>
+
         <section id="marcasvendidas"> 
             <h3>Marcas Vendidas</h3>
-            <div class="marcas">
+            <div id="marcas">
                 <div class="colunasmarcas">
                     <picture>
                         <source media="(max-width: 150px)" srcset="imagens/ourofino.png">
-                        <img src="imagens/ourofino.png" alt="Ouro Fino">
+                        <img src="./assets/imagens/ourofino.png" alt="Ouro Fino">
                     </picture>
                     <h4>Ouro Fino</h4>
                     <p>Nossa origem é ser natural.</p>
@@ -49,7 +54,7 @@
                 <div class="colunasmarcas">
                     <picture>
                         <source media="(max-width: 150px)" srcset="imagens/fontlife.png">
-                        <img src="imagens/fontlife.png" alt="FontLife">
+                        <img src="./assets/imagens/fontlife.png" alt="FontLife">
                     </picture>
                     <h4>Font Life</h4>
                     <p>Água Mineral Font Life, leve como a vida deve ser.</p>
@@ -57,7 +62,7 @@
                 <div class="colunasmarcas">
                     <picture>
                         <source media="(max-width: 150px)" srcset="imagens/requinte.png">
-                        <img src="imagens/requinte.png" alt="Requinte">
+                        <img src="./assets/imagens/requinte.png" alt="Requinte">
                     </picture>
                     <h4>Requinte</h4>
                     <p>Fonte de Saúde</p>
@@ -65,7 +70,7 @@
                 <div class="colunasmarcas">
                     <picture>
                         <source media="(max-width: 150px)" srcset="">
-                        <img src="imagens/Clari-1.png" alt="Clari">
+                        <img src="./assets/imagens/Clari-1.png" alt="Clari">
                     </picture>
                     <h4>Clari</h4>
                     <p>A Água Mineral Natural CLARI é sinônimo de qualidade e pureza.</p>
@@ -73,7 +78,7 @@
                 <div class="colunasmarcas">
                     <picture>
                         <source media="(max-width: 150px)" srcset="">
-                        <img src="imagens/timbu.png" alt="Timbu">
+                        <img src="./assets/imagens/timbu.png" alt="Timbu">
                     </picture>
                     <h4>Timbu</h4>
                     <p>Saudável para sempre.</p>
@@ -81,7 +86,7 @@
                 <div class="colunasmarcas">
                     <picture>
                         <source media="(max-width: 150px)" srcset="">
-                        <img src="imagens/lindagua.png" alt="Lindagua">
+                        <img src="./assets/imagens/lindagua.png" alt="Lindagua">
                     </picture>
                     <h4>Lind'Água</h4>
                     <p>Leve por natureza, como deve ser!</p>
@@ -90,39 +95,47 @@
         </section>
 
         <section id="entrega">
-            <h3>Água é essencial</h3>
-            <p>E entregamos ela para você! <br> Consulte as áreas de entrega em Curitiba clicando abaixo.</p>
-            <button class="botao2"><a href="https://wa.me/554197308606">WhatsApp</a></button>
-            <aside>
-                <img src="imagens/copo-de-água.jpg" alt="">
+            <div class="entregaAguaEssencial">
+                <h3>Água é essencial</h3>
+                <p>E entregamos ela para você! <br> Consulte as áreas de entrega em Curitiba clicando abaixo.</p>
+                <button class="botaoContato"><a href="https://wa.me/554197308606">WhatsApp</a></button>
+            </div>
+            <aside class="entregaAguaEssencial">
+                <!--<img src="./assets/imagens/copo-de-água.jpg" alt="Copo de Água">-->
             </aside>
         </section>
        
         <section id="pagamento">
-            <aside>
-                <img src="imagens/pagamentoemcartaodecredito.jpg" alt="">
-                <img src="imagens/formas-de-pagamento.jpg" alt="">
-            </aside>
-           <h3>Aceitamos Cartões e Faturamos para Empresas</h3>
-           <p>Quer ainda mais facilidade? Aceitamos cartões e faturamos para empresas. Entre em contato por telefone, e-mail ou WhatsApp. Será um prazer lhe atender!</p>
-           <button class="botao2"><a href="#contato">Contato</a></button>
+           <div id="meiosdepagamento">
+               <h3>Aceitamos Cartões e Faturamos para Empresas</h3>
+               <p>Quer ainda mais facilidade? Aceitamos cartões e faturamos para empresas. Entre em contato por telefone, e-mail ou WhatsApp. Será um prazer lhe atender!</p>
+               <button class="botaoContato"><a href="#contato">Contato</a></button>
+           </div>
+           <aside>
+            <img id="maquinadecartao" src="./assets/imagens/pagamento-em-cartao-de-credito.jpg" alt="Máquina de carão de crédito">
+            <!--<img id="bandeirascartoes" src="./assets/imagens/bandeiras.jpg" alt="Bandeiras Aceitas">-->
+        </aside>
          </section>
       
         <section id="contato">
-            <h3>Entre em contato</h3>
-            <p>Horários de Atendimento <br> Seg a Sex 9:00 – 18:00 e Sáb 09:00 – 13:00 <br>
-                Informações De Contato <br>
-                41 3232-7500 <br>
-                41 3222-7667 <br>
-                41 99730-8606 <br>
-                contato@distribuidorashibayama.com.br <br>
-                Endereço <br>
-                R. Conselheiro Laurindo, 63 – 80060-100, Centro, Curitiba-PR <br>
-                <aside>
-                    <img src="imagens/jarra-de-água.jpg" alt="">
-                </aside>
+            <div id="entreEmContato">
+                <h3>Entre em contato</h3>
+                <p>Horários de Atendimento <br> Seg a Sex 9:00 – 18:00 e Sáb 09:00 – 13:00 <br><br>
+                    Informações De Contato <br>
+                    <img src="assets/imagens/icon-telefone.png" alt="telefone"> 41 3232-7500 <br>
+                    <img src="assets/imagens/icon-telefone.png" alt="telefone"> 41 3222-7667 <br>
+                    <a href="https://wa.me/554197308606"> <img src="assets/imagens/logo-whats.png" alt=""> 41 99730-8606</a> <br>
+                    <img src="assets/imagens/icon-mail.png" alt="e-mail"> contato@distribuidorashibayama.com.br <br><br>
+                    Endereço <br>
+                    R. Conselheiro Laurindo, 63 – 80060-100, Centro, Curitiba-PR <br></p>
+            </div>
+            <aside>
+                <!--<img src="./assets/imagens/jarra-de-água.jpg" alt="Jarra de Água Gelada">-->
+            </aside>
         </section>
-   
+        <div>
+            <button></button>
+        </div>
         <footer>
             <p>Copyright © 2022 – Distribuidora Shibayama. Site desenvolvido por <a href="https://hannaazevedo.com.br/">Hanna Azevedo</a>.</p>
         </footer>
