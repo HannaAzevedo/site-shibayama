@@ -1,12 +1,10 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 
-@media screen and (min-width: 900px) {
-    :root {
+/*Estilo tela Tablet*/
+@media screen and (min-width: 768px) and (max-width:991px) {
+    /*:root {
         --cor0: #71faff;
         --cor1: #1C244B;
         --cor2: #324A6D;
@@ -16,11 +14,206 @@
         --fonte-padrao: 'Poppins', sans-serif;
         --fonte-destaque: 'Lato', sans-serif;
         --fonte-detalhe: 'Open Sans', sans-serif;
+    }*/
+
+
+
+    body {
+        min-width: 768px;
+        max-width: 100%;
+        font-size: 1.2em;
+    }
+
+    header {
+        justify-content: space-around;
+
+    }
+
+    header picture img { 
+        max-width: 200px;
+    }
+
+    #menuToggle {
+        display: none;
+    }
+
+
+    header nav {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        max-width: 80%;
+        padding: 2px;
+        z-index: 1000;
+        justify-content: flex-end;
+       
+        
+    }
+
+    header div#menu { 
+        display: flex;
+        position: relative;
+        max-width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 0px;
+        visibility: visible;
+        transition: none;
+        flex-grow: 1;
+        flex-basis: content;
+        
+    }
+
+    header div#menu a {
+        display: block;
+        border: none;
+        padding: 0px;
+        margin: auto;
+        text-align: right;
+
+    }
+
+    main div#marcas  {
+
+        display: flex;
+        max-width: 100%;
+        padding: 30px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
+
+    #marcas .colunasmarcas{
+        position: relative;
+        height: 400px;
+        max-height: 100%;
+    }
+
+
+    #marcasvendidas h3, #entrega h3, #pagamento h3, #contato h3{
+        font-size: 2.8em;
+    }
+
+    main div#marcas h4 {
+        font-size: 1.8em;
+
+    }
+
+    main div#marcas p {
+        display: flex;
+        max-width: 150px;
+        padding: 30px;
+        justify-content: center;
+        font-size: 1.2em;
+    }
+
+    main section#entrega {
+        padding: 5px;
+        border: 5px solid var(--cor1);
+        
+    }  
+    
+    main section#entrega .entregaAguaEssencial{
+        padding: 30px;
+        
+    } 
+
+    section div#meiosdepagamento {
+        padding: 30px;
+    }
+
+}
+
+/*Estilo tela Desktop*/
+@media screen and (min-width: 992px) {
+
+    body {
+        min-width: 992px;
+        max-width: 100%;
+        font-size: 1.4em;
+    }
+
+    header {
+        min-height: 150px;
+        justify-content: space-around;
+
+    }
+
+    header picture img { 
+        max-width: 200px;
+        
+
+    }
+
+    #menuToggle {
+        display: none;
+    }
+
+    header nav {
+
+        display: flex;
+        width: 100%;
+        height: 100%;
+        max-width: 80%;
+        padding: 2px;
+        z-index: 1000;
+        
     }
     
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: 0;
+    header div#menu { 
+
+        display: flex;
+        position: relative;
+        max-width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 0px;
+        visibility: visible;
+        transition: none;
+        text-align: end;
+        justify-content: flex-end;
+        
     }
+
+    header div#menu a {
+        display: block;
+        border: none;
+        padding: 0px;
+        margin: 20px;
+ 
+    }
+        
+    .container {
+        display: flex;
+        flex-direction: row                                                                                                                                                                                                                                                                                               ;
+        background-color: #114ba2ed;
+    }
+
+    .container::after{
+        content:'';
+        background-color: #114ba2ed;
+        background: url(../imagens/gota-de-água.jpg);
+        width:100%;
+        height:100%;
+        background-position: center;
+        background-size: cover;
+        opacity: none;
+        filter: brightness(100%);
+    }
+
+    main .container #coluna-texto h1{
+        display: flex;
+    }
+
+    main .container #coluna-imagem{
+        display: flex;
+        
+    }
+
+
 }

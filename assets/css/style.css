@@ -31,12 +31,14 @@ body {
     font-family: var(--fonte-padrao);
     color: var(--cor1);
     background-color: #F9FCFD;
-   
 }
+
 header {
     display: flex;
     position: sticky;
     top: 0;
+    right: 0;
+    left: 0;
     min-width: 300px;
     max-width: 100%;
     min-height: 100px;
@@ -49,6 +51,7 @@ header {
 header picture img { 
     max-width: 130px;
 }
+
 header #close {
     display: none;
     font-variation-settings:
@@ -98,7 +101,6 @@ header button{
 }
 
 #menu {
-
     display: block;
     position: absolute;
     width: 100%;

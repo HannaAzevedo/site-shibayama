@@ -1,24 +1,35 @@
+const nav = document.getElementById('nav');
+const btnToggle = document.getElementById('menuHamburguer');
+const btnClose = document.getElementById('close');
 
 function expandirMenu() {
-    const nav = document.getElementById('nav');
-    nav.classList.toggle('active');
 
-    const btnToggle = document.getElementById('menuHamburguer');
-    btnToggle.classList.toggle('disabled');
+    if (window.innerWidth < 768) {
 
-    const btnClose = document.getElementById('close');
-    btnClose.classList.toggle('active');
+        nav.classList.toggle('active');
+
+        btnToggle.classList.toggle('disabled');
+
+        btnClose.classList.toggle('active');
+    } else {
+        nav.classList.toggle('');
+    }
 }
 
 function recolherMenu() {
-    const nav = document.getElementById('nav');
-    nav.classList.remove('active');
 
-    const btnToggle = document.getElementById('menuHamburguer');
-    btnToggle.classList.toggle('disabled');
+    if (window.innerWidth < 768) {
 
-    const btnClose = document.getElementById('close');
-    btnClose.classList.toggle('active');
+        nav.classList.remove('active');
+
+        btnToggle.classList.toggle('disabled');
+
+        btnClose.classList.toggle('active');
+
+    } else {
+        
+        nav.classList.toggle('');
+    }
 }
 
 /*menuIcon.addEventListener('click', expandirMenu());*/
