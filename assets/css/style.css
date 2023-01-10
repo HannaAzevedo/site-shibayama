@@ -192,6 +192,7 @@ main .container #coluna-texto h2{
 }
 
 main .container #coluna-texto img {
+
     width: 15px;
 }
 
@@ -206,6 +207,7 @@ main .container #coluna-texto h3{
     justify-content: stretch;
 }
 
+
 .botaoContato {
 
     display: flex;
@@ -213,7 +215,6 @@ main .container #coluna-texto h3{
     width: fit-content;
     padding: 20px 40px 20px 40px;
     margin: auto;
-    font-family: var(--fonte-padrao);
     font-size: 1em;
     font-weight: 500;
     color: white;
@@ -292,9 +293,7 @@ main section#entrega {
     scroll-margin-top: 5rem;
 }
 
-section#entrega .entregaAguaEssencial{
-    padding: 40px;
-} 
+
 /* Configuração das formas das seções*/
 .custom-shape-divider-bottom-1673031617 {
 
