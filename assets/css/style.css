@@ -287,6 +287,7 @@ main section#entrega {
     max-width: 100%;
     flex-direction: column;
     padding: 30px;
+    padding-bottom: 60px;
     text-align: center; 
     align-items: center;   
     background-color: var(--cor1); 

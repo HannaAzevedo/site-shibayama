@@ -4,19 +4,6 @@
 
 /*Estilo tela Tablet*/
 @media screen and (min-width: 768px) and (max-width:991px) {
-    /*:root {
-        --cor0: #71faff;
-        --cor1: #1C244B;
-        --cor2: #324A6D;
-        --cor3: rgba(61, 165, 196, 0.418); 
-        --cor5: #2575fc;
-
-        --fonte-padrao: 'Poppins', sans-serif;
-        --fonte-destaque: 'Lato', sans-serif;
-        --fonte-detalhe: 'Open Sans', sans-serif;
-    }*/
-
-
 
     body {
         min-width: 768px;
@@ -126,9 +113,8 @@
         
     }  
     
-    main section#entrega .entregaAguaEssencial{
-        padding: 30px;
-        
+    main section#entrega .entregaAguaEssencial {
+        padding: 30px;        
     } 
 
 
