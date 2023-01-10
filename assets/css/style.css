@@ -50,7 +50,8 @@ header {
 }
 
 header picture img { 
-    max-width: 130px;
+    max-width: 100px;
+    padding: 10px;
 }
 
 header #close {
