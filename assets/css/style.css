@@ -31,6 +31,7 @@ body {
     font-family: var(--fonte-padrao);
     color: var(--cor1);
     background-color: #F9FCFD;
+    font-size: 1em;
 }
 
 header {
@@ -190,6 +191,10 @@ main .container #coluna-texto h2{
     justify-content: stretch;
 }
 
+main .container #coluna-texto img {
+    width: 15px;
+}
+
 main .container #coluna-imagem{
     display: none;
 }
@@ -201,28 +206,35 @@ main .container #coluna-texto h3{
     justify-content: stretch;
 }
 
-.botaoPecaAgora, .botaoContato {
+.botaoContato {
 
     display: flex;
     flex-flow: row;
-    padding: 15px 50px 15px 50px;
+    width: fit-content;
+    padding: 20px 40px 20px 40px;
+    margin: auto;
     font-family: var(--fonte-padrao);
     font-size: 1em;
     font-weight: 500;
+    color: white;
     background-color: #2575fc;
-    border-style: solid;
-    border-width: 1px 1px 1px 1px;
+    text-decoration: none;
+    border: 1px solid var(--cor3);
     border-radius: 49px 49px 49px 49px;
     box-shadow: 19px 19px 40px 0px rgb(0 0 0 / 10%);
     line-height: 1;
-    margin: auto;
-}
-
-.botaoPecaAgora > a, .botaoContato > a {
-    color: white;
-    text-decoration: none;
 
 }
+
+.botaoContato:hover {
+    background-color: #1C244B;
+}
+
+.botaoContato img {
+    width: 15px;
+    padding-right: 5px;
+}
+
 
 main section#marcasvendidas {
     scroll-margin-top: 5rem;
@@ -275,11 +287,14 @@ main section#entrega {
     flex-direction: column;
     padding: 30px;
     text-align: center; 
-    margin: auto;
     align-items: center;   
     background-color: var(--cor1); 
     scroll-margin-top: 5rem;
 }
+
+section#entrega .entregaAguaEssencial{
+    padding: 40px;
+} 
 /* Configuração das formas das seções*/
 .custom-shape-divider-bottom-1673031617 {
 
@@ -350,18 +365,21 @@ section div#meiosdepagamento #bandeirascartoes{
 }
 
 main section#contato {
-    display: flex;
     max-width: 100%;
-    flex-direction: column-reverse;
     padding: 30px;
     text-align: center; 
     margin: auto;
-    align-items: center; 
     scroll-margin-top: 5rem;
 }
 
-section#contato aside img{
-    display: none;
+section#contato aside {
+    width: 80%;
+    margin: auto;
+}
+
+#contato iframe {
+    padding: 0px;
+    width: 100%;
 }
 
 section#contato #entreEmContato img{
@@ -372,12 +390,6 @@ section#contato #entreEmContato img{
 section#contato #entreEmContato a{
     text-decoration: none;
     color: var(--cor1);
-}
-
-#contato iframe {
-    padding: 0px;
-    width: 90%;
-
 }
 
 #btnfloatWhatsApp{
@@ -412,7 +424,7 @@ footer {
 
 footer p {
     color: white;
-    font-size: .8em;
+    font-size: .9em;
     font-weight: 300;
 }
 

@@ -35,8 +35,6 @@ function recolherMenu() {
 /*menuIcon.addEventListener('click', expandirMenu());*/
 
 
-
-
 /*if (nav.classList.toggle == 'active') {
     const itemMenu = document.getElementsByClassName('itemMenu');
     function recolherMenu() {

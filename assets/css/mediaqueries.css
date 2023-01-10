@@ -21,16 +21,17 @@
     body {
         min-width: 768px;
         max-width: 100%;
-        font-size: 1.2em;
+        font-size: 1em;
     }
 
     header {
         justify-content: space-around;
+        min-height: 100px;
 
     }
 
     header picture img { 
-        max-width: 200px;
+        max-width: 120px;
     }
 
     #menuToggle {
@@ -72,6 +73,7 @@
         padding: 0px;
         margin: auto;
         text-align: right;
+        font-size: 0.9em;
 
     }
 
@@ -94,7 +96,7 @@
 
 
     #marcasvendidas h3, #entrega h3, #pagamento h3, #contato h3{
-        font-size: 2.8em;
+        font-size: 2.2em;
     }
 
     main div#marcas h4 {
@@ -110,6 +112,15 @@
         font-size: 1.2em;
     }
 
+    section#pagamento {
+        background-color: white;
+    }
+
+    section div#meiosdepagamento {
+        margin: 50px;
+        padding: 30px;
+    }
+
     main section#entrega {
         padding: 5px;
         border: 5px solid var(--cor1);
@@ -121,13 +132,10 @@
         
     } 
 
-    section div#meiosdepagamento {
-        padding: 30px;
-    }
 
 }
+/*-------------------------------Estilo tela Desktop--------------------------*/
 
-/*Estilo tela Desktop*/
 @media screen and (min-width: 992px) {
 
     body {
@@ -189,8 +197,8 @@
     }
         
     .container {
-        display: flex; 
-        padding: 50px;                
+        display: flex;  
+        padding: 0px;             
         background-color: #114ba2ed;
         flex-direction: column;
         columns: 2;
@@ -199,8 +207,8 @@
 
     .container div.conteudo-container {
         display: flex;
-        padding: 50px;
-        justify-content: space-between;
+        padding: 150px;
+        justify-content: space-evenly;
     }
     .container::after{
         content:'';
@@ -208,6 +216,7 @@
         background: url(../imagens/gota-de-água.jpg);
         width:100%;
         height:100%;
+        background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
         opacity: none;
@@ -225,15 +234,17 @@
 
     main .container #coluna-texto h1 {
         display: block;
-        text-align: center;
+        text-align: left;
         font-weight: 600;
     }
     main .container #coluna-texto h2 {
-        display: flex;
+        display: block;
+        padding: 20px 0px 10px 0px;
         max-width: 100%;
         font-size: 1.3;
         font-weight: 400;
         font-style: italic;
+        text-align: left;
     
     }
 
@@ -257,9 +268,13 @@
 
     main section#marcasvendidas {
         
-        
         padding-top: 40px;
         padding-bottom: 40px;
+
+    }
+
+    #marcasvendidas h3, #entrega h3, #pagamento h3, #contato h3{
+        font-size: 2.4em;
     }
 
     main div#marcas  {
@@ -269,12 +284,13 @@
         flex-wrap: wrap;
         max-width: 100%;
         padding: 50px;  
-        justify-content: space-evenly;
+        margin: 30px;
+        align-items: flex-start;
+        justify-content: space-around;
     }
 
     #marcas .colunasmarcas{
-        max-width: 100%;
-        max-height: 100%;
+        padding: 0px;
         justify-items: center;
     }
 
@@ -288,27 +304,42 @@
 
     main section#entrega {
         padding: 5px;
-        border: 5px solid var(--cor1);
-        
+        border: 5px solid var(--cor1);       
     } 
 
-    main section#entrega .entregaAguaEssencial{
+    section#entrega .entregaAguaEssencial{
         padding: 60px;
-        
     } 
 
-    main section div#meiosdepagamento {
+    section div#meiosdepagamento {
         margin: 50px;
         padding: 30px;
     }
 
+
     main section#contato {
-        margin: 50px;
-    }
-    section#contato #entreEmContato {
         display: flex;
-
+        margin: 50px;
+        padding: 100px 50px;
+        justify-content: space-evenly;
     }
 
+    section#contato #entreEmContato {
+        padding: 30px;
+    }
+
+    section#contato #entreEmContato h3 {
+        padding: 0px;
+        text-align: left;
+    }
+    section#contato #entreEmContato p {
+        text-align: left;
+    }
+
+    section#contato aside {
+        width: 40%;
+        margin: 0px;
+        padding: 30px;
+    }
 
 }
