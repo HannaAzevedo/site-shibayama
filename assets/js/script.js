@@ -31,17 +31,3 @@ function recolherMenu() {
         nav.classList.toggle('');
     }
 }
-
-/*menuIcon.addEventListener('click', expandirMenu());*/
-
-
-/*if (nav.classList.toggle == 'active') {
-    const itemMenu = document.getElementsByClassName('itemMenu');
-    function recolherMenu() {
-        const menu = document.getElementsById('menu');
-        menu.style.display = 'none'
-    }
-
-    
-itemMenu.addEventListener('click', recolherMenu);
-}*/
