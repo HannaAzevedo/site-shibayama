@@ -1,15 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
+<head>       
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-221396947-1"></script>
+    <script>
+         window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-221396947-1');
+    </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Favicon Site-->
     <link rel="shortcut icon" href="assets/imagens/logo-shibayama.ico" type="image/x-icon">
+    <!--CSS-->
     <link rel="stylesheet" href="./assets/css/style.css?v=060123cll2">
     <link rel="stylesheet" href="./assets/css/mediaqueries.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
     <title>Shibayama Distribuidora de Água</title>
-
 </head>
 <body>
     <header>
@@ -18,14 +27,14 @@
         </picture>
 
         <nav id="nav">
-            <button id="menuToggle" onclick="expandirMenu()"> 
-                <span id="menuHamburguer" class="material-symbols-outlined">menu</span>
+            <!--Ícone Menu Mobile-->
+            <button id="menuToggle" onclick="expandirMenu()" name="Menu"> 
+                <img class="material-symbols-outlined" src="assets/imagens/menu_white_24dp.svg" alt="menu" id="menuHamburguer">
 
-                <span id="close" class="material-symbols-outlined">
-                    close
-                </span>
+                <img class="material-symbols-outlined" src="assets/imagens/close_white_24dp.svg" alt="fechar" id="close">
+                </picture>
             </button>
-
+            <!--Menu Itens-->
             <div id="menu" onclick="recolherMenu()">
                 <a href="#inicio" class="itemMenu">Início</a>
                 <a href="#marcasvendidas" class="itemMenu">Marcas</a>
@@ -47,7 +56,6 @@
                     
                 </div>
                 <div id="coluna-imagem"><picture>
-
                     <img src="./assets/imagens/shibayama-marcas.png" alt="Marcas">
                 </picture>
                 </div>
@@ -67,14 +75,6 @@
                 </div>
                 <div class="colunasmarcas">
                     <picture>
-                        <source media="(max-width: 150px)" srcset="imagens/fontlife.png">
-                        <img src="./assets/imagens/fontlife.png" alt="FontLife">
-                    </picture>
-                    <h4>Font Life</h4>
-                    <p>Água Mineral Font Life, leve como a vida deve ser.</p>
-                </div>
-                <div class="colunasmarcas">
-                    <picture>
                         <source media="(max-width: 150px)" srcset="imagens/requinte.png">
                         <img src="./assets/imagens/requinte.png" alt="Requinte">
                     </picture>
@@ -83,11 +83,11 @@
                 </div>
                 <div class="colunasmarcas">
                     <picture>
-                        <source media="(max-width: 150px)" srcset="">
-                        <img src="./assets/imagens/Clari-1.png" alt="Clari">
+                        <source media="(max-width: 150px)" srcset="imagens/fontlife.png">
+                        <img src="./assets/imagens/fontlife.png" alt="FontLife">
                     </picture>
-                    <h4>Clari</h4>
-                    <p>A Água Mineral Natural CLARI é sinônimo de qualidade e pureza.</p>
+                    <h4>Font Life</h4>
+                    <p>Água Mineral Font Life, leve como a vida deve ser.</p>
                 </div>
                 <div class="colunasmarcas">
                     <picture>
@@ -100,10 +100,10 @@
                 <div class="colunasmarcas">
                     <picture>
                         <source media="(max-width: 150px)" srcset="">
-                        <img src="./assets/imagens/lindagua.png" alt="Lindagua">
+                        <img src="./assets/imagens/logo-prata-da-serra.png" alt="Prata da Serra">
                     </picture>
-                    <h4>Lind'Água</h4>
-                    <p>Leve por natureza, como deve ser!</p>
+                    <h4>Prata da Serra</h4>
+                    <p>Você merece sua água da melhor qualidade.</p>
                 </div>
             </div>    
         </section>
@@ -117,7 +117,7 @@
             <div class="entregaAguaEssencial">
                 <h3>Água é essencial</h3>
                 <p>E entregamos ela para você! <br> Consulte as áreas de entrega em Curitiba clicando abaixo.</p>
-                <a href="https://wa.me/554197308606" target="_blank" class="botaoContato"><img src="assets/imagens/logo-whatsapp-white.png" alt="Contato">WhatsApp</a>
+                <a href="https://wa.me/554197308606" target="_blank" class="botaoContato"><img src="assets/imagens/logo-whatsapp-white.png" alt="Botão Contato">WhatsApp</a>
             </div>
         </section>
         <div class="custom-shape-divider-top-1673031793">
@@ -126,23 +126,23 @@
             </svg>
         </div>
         <section id="pagamento">
-           <div id="meiosdepagamento">
+            <div id="meiosdepagamento">
                <h3>Aceitamos Cartões e Faturamos para Empresas</h3>
                <p>Quer ainda mais facilidade? Aceitamos cartões e faturamos para empresas. Entre em contato por telefone, e-mail ou WhatsApp. Será um prazer lhe atender!</p>
                <img id="bandeirascartoes" src="./assets/imagens/bandeiras.jpg" alt="Bandeiras Aceitas">
                <a href="#contato" class="botaoContato">Contato</a>
-           </div>
-         </section>
+            </div>
+        </section>
       
         <section id="contato">
             <div id="entreEmContato">
                 <h3>Entre em contato</h3>
                 <p><strong>Horários de Atendimento</strong> <br> Seg a Sex 9:00 – 18:00 e Sáb 09:00 – 13:00 <br><br>
                 <strong> Informações De Contato <br></strong>
-                <img src="assets/imagens/icon-telefone.png" alt="telefone"> 41 3232-7500 <br>
-                <img src="assets/imagens/icon-telefone.png" alt="telefone"> 41 3222-7667 <br>
-                <a href="https://wa.me/554197308606" target="_blank"> <img src="assets/imagens/logo-whats.png" alt=""> 41 99730-8606</a> <br>
-                <img src="assets/imagens/icon-mail.png" alt="e-mail"> contato@distribuidorashibayama.com.br <br><br>
+                <img src="assets/imagens/icon-telefone.png" alt="ícone telefone"> 41 3232-7500 <br>
+                <img src="assets/imagens/icon-telefone.png" alt="ícone telefone"> 41 3222-7667 <br>
+                <a href="https://wa.me/554197308606" target="_blank"> <img src="assets/imagens/logo-whats.png" alt="ícone WhatsApp"> 41 99730-8606</a> <br>
+                <img src="assets/imagens/icon-mail.png" alt="ícone e-mail"> contato@distribuidorashibayama.com.br <br><br>
                 <strong> Endereço <br></strong>
                 R. Conselheiro Laurindo, 63 – 80060-100, Centro, Curitiba-PR <br></p><br>
                 
@@ -151,13 +151,10 @@
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3603.3225707552774!2d-49.268174784508545!3d-25.427477083789622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce414db03b70f%3A0x77b58dbab170ed96!2sShibayama%20Distribuidora%20de%20%C3%81gua!5e0!3m2!1spt-BR!2sbr!4v1673032598748!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </aside>
         </section>
-        <div>
-            <button></button>
-        </div>
-        <div id="btnfloatWhatsApp">
-            <button id="btnWhatsApp">
-                <a href="https://wa.me/554197308606" target="_blank" > <img src="assets/imagens/logo-whatsapp-white.png" alt="WhatsApp"></a>
 
+        <div id="btnfloatWhatsApp">
+            <button id="btnWhatsApp" name="Botão WhatsApp">
+                <a href="https://wa.me/554197308606" target="_blank" > <img src="assets/imagens/logo-whatsapp-white.png" alt="WhatsApp"></a>
             </button>
         </div>
         <footer>
