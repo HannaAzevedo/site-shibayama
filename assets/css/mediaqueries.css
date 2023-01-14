@@ -1,7 +1,6 @@
 @charset "UTF-8";
 
 
-
 /*Estilo tela Tablet*/
 @media screen and (min-width: 768px) and (max-width:991px) {
 
@@ -86,7 +85,7 @@
     }
 
     main div#marcas h4 {
-        font-size: 1.6em;
+        font-size: 1em;
 
     }
 
@@ -95,7 +94,7 @@
         max-width: 150px;
         padding: 30px;
         justify-content: center;
-        font-size: 1.2em;
+        font-size: 1em;
     }
 
     section#pagamento {
@@ -117,6 +116,9 @@
         padding: 30px;        
     } 
 
+    section#contato #entreEmContato #p-email {
+        font-size: 1em;
+    }
 
 }
 /*-------------------------------Estilo tela Desktop--------------------------*/
@@ -311,7 +313,7 @@
 
 
     main section#contato {
-        display: flex;
+        flex-direction: row;
         margin: 50px;
         padding: 100px 50px;
         justify-content: space-evenly;
@@ -325,8 +327,13 @@
         padding: 0px;
         text-align: left;
     }
+
     section#contato #entreEmContato p {
         text-align: left;
+    }
+
+    section#contato #entreEmContato #p-email {
+        font-size: 1em;
     }
 
     section#contato aside {

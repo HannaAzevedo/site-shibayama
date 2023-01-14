@@ -368,6 +368,8 @@ section div#meiosdepagamento #bandeirascartoes{
 }
 
 main section#contato {
+    display: flex;
+    flex-direction: column;
     max-width: 100%;
     padding: 30px;
     text-align: center; 
@@ -385,15 +387,20 @@ section#contato aside {
     width: 100%;
 }
 
-section#contato #entreEmContato img{
+section#contato #entreEmContato img {
     max-width: 15px;
     
 }
 
-section#contato #entreEmContato a{
+section#contato #entreEmContato a {
     text-decoration: none;
     color: var(--cor1);
 }
+
+section#contato #entreEmContato #p-email {
+    font-size: .8em;
+}
+
 
 #btnfloatWhatsApp{
     background-color: var(--cor1);
