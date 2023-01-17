@@ -33,7 +33,7 @@ body {
     font-family: var(--fonte-padrao);
     color: var(--cor1);
     background-color: #F9FCFD;
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 header {
@@ -107,14 +107,13 @@ header button{
     height: 0px;
     top: 100px;
     right: 0px;
-    padding-top: 20px;
+    padding-top: 16px;
     background-color: var(--cor1);
     z-index: 100;
     text-align: left;
     transition: .6s;
     visibility: hidden;
     overflow-y: hidden;
-    
 }
 
 #nav.active #menu {
@@ -131,7 +130,7 @@ header nav a {
     padding: 1rem 0;
     margin: 0 2rem;
     border-bottom: 2px solid var(--cor3);
-    font-size: 1em;
+    font-size: 1rem;
     text-transform: uppercase;
 }
 
@@ -214,7 +213,7 @@ main .container #coluna-texto h3{
     width: fit-content;
     padding: 20px 40px 20px 40px;
     margin: auto;
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: 500;
     color: white;
     background-color: #2575fc;
@@ -264,21 +263,21 @@ div#marcas {
 #marcasvendidas h3, #entrega h3, #pagamento h3, #contato h3{
     padding-top: 60px;
     padding-bottom: 30px;
-    font-size: 1.8em;
+    font-size: 1.8rem;
     font-weight: 600;
     text-align: center;
     justify-content: stretch;
 }
 
-#marcas p{
+#marcas p {
     display: flex;
     flex-direction: column;
     color: var(--cor1);
     font-family:  var(--fonte-detalhe);
-    font-size: 0.9em;
+    font-size: 1rem;
     padding: 10px;
     font-weight: 400;
-    line-height: 1.2em;
+    line-height: 1.2rem;
 }
 
 main section#entrega {
@@ -398,11 +397,11 @@ section#contato #entreEmContato a {
 }
 
 section#contato #entreEmContato #p-email {
-    font-size: .8em;
+    font-size: .8rem;
 }
 
 
-#btnfloatWhatsApp{
+#btnfloatWhatsApp {
     background-color: var(--cor1);
     border-radius: 10%;
     padding:5px ;
@@ -435,7 +434,7 @@ footer {
 
 footer p {
     color: white;
-    font-size: .9em;
+    font-size: .9rem;
     font-weight: 300;
 }
 
